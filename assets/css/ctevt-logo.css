@@ -1,0 +1,22 @@
+/* CSS for embedding the CTEVT logo from assets/ctevt-logo.svg as a background
+   Place this file at assets/css/ctevt-logo.css
+   Usage: add the class "ctevt-logo" to an element where you want the logo to appear.
+   Adjust width/height to match the exact pixel size you need. */
+
+.ctevt-logo {
+  width: 280px;               /* change to needed size */
+  height: 320px;              /* preserve aspect ratio */
+  display: inline-block;
+  background-image: url("/assets/ctevt-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;   /* scales to fit the box */
+  background-color: transparent; /* transparent background */
+}
+
+/* Alternative if you prefer to embed the SVG with an <img> element */
+.ctevt-logo-img { width: 280px; height: auto; display:block; }
+
+/* Recolorable variant: if you replace the SVG with a version using currentColor,
+   use this class to set the logo color via the element's color property. */
+.ctevt-logo--recolorable { color: #003da5; width: 280px; height: 320px; display:inline-block; background:center/contain no-repeat; background-image: url('/assets/ctevt-logo-currentcolor.svg'); }

@@ -1,0 +1,1 @@
+This repository now uses a new CTEVT logo.
